@@ -12,10 +12,7 @@ public class Image {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String imageUrl;
-
-    @OneToOne(mappedBy = "image")
-    private Contact contact;
-
+	
 	public Long getId() {
 		return id;
 	}
